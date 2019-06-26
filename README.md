@@ -1,2 +1,2 @@
 # the-game-of-life
-the game of life
+Conway's game of life
