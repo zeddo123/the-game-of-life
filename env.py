@@ -26,15 +26,19 @@ def init_env(h, w, *args):
 
 def tick(env, h, w):
 	# applying the rules to every cell
+	flip = []
 	for i in range(h):
 		for j in range(w):
 			number_of_neighbours = cell.number_of_neighbours(env,i,j)
 			if env[i,j] == False:
 				if number_of_neighbours == 3:
-					env[i,j] = True
+					flip.append((i, j))
 			else:
 				if number_of_neighbours < 2 or number_of_neighbours > 3:
-					env[i,j] = False
+					flip.append((i, j))
+
+	for position in flip:
+		env[position[0],position[1]] = not env[position[0],position[1]]
 
 	return env
 

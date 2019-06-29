@@ -1,19 +1,13 @@
-import matplotlib.pyplot as plt
-import matplotlib.animation as anim
-from matplotlib import style
-
+import os
 import env as en
 
-style.use('fivethirtyeight')
-fig = plt.figure(figsize=(10,10))
+env = en.init_env(10,10,(5,1),(5,2),(5,3))
 
-env = en.init_env(10,10,(5,1),(5,2),(5,3),(5,4))
-print(env)
-input()
-def animate(i, env):
+while True:
+	for i in range(10):
+		for j in range(10):
+			print('x',end='') if env[i,j] == True else print('.',end='')
+		print()
 	env = en.tick(env,env.shape[0],env.shape[1])
-	plt.matshow(env)
-	plt.grid(b=False)
-
-ani = anim.FuncAnimation(fig, animate, interval=100000, fargs=(env,))
-plt.show()
+	input()
+	os.system('clear')
