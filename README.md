@@ -11,5 +11,5 @@
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 _note:the program is procedural, so no class please_
 
-##licence
+## Licence
 [WTFPL](https://wikipedia.org/wiki/WTFPL)
