@@ -1,7 +1,7 @@
 import numpy as np
 import cell
 
-def init_env(h, w, *args):
+def init_env(h, w, args):
 	if h < 0 or w < 0:
 		raise TypeError('the demensions cant be negativ')
 	# initialization function
@@ -9,7 +9,7 @@ def init_env(h, w, *args):
 	# create a numpy array of cells (booleans)
 	# h is the heigth
 	# w is the weigth
-	# *args are a tuple of x and y
+	# args are a tuple of x and y
 
 	env = np.full((h,w), False, dtype=bool)
 
