@@ -1,5 +1,5 @@
 # the-game-of-life
-***Conway's** game of life*
+Dead simple ***Conway's** game of life*
 
 ## The rules are simple
 1. if a cell has 2 or 3 living neighbours, the cell survive
@@ -30,7 +30,7 @@
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-_note:the program is procedural, so no class please_
+_note:procedural code_
 
 ## Licence
 [WTFPL](https://wikipedia.org/wiki/WTFPL)
