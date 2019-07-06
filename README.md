@@ -8,25 +8,19 @@ Dead simple ***Conway's** game of life*
 4. if a cell has more than 3 neighbours, the cell dies
 
 ## Usage
-    drawing.py [-h] [-g N] [-s N] [-t {cli,gui}]
+usage: drawing.py [-h] [-g N] [-s N] [-c N, N) [(N, N ...]] [-t {cli,gui}]
 
-    Conway's game of life
-
+    A Dead Simple Conway's game of life
     optional arguments:
-  
-    -h, --help            
-                       show this help message and exit
-  
-    -g N, --generations N
-  
-                        number of generation to loop over
-  
-    -s N, --size N        
-                        size of the board
-  
-    -t {cli,gui}, --type {cli,gui}
-  
-                        type of display
+      -h, --help            show this help message and exit
+      -g N, --generations N
+                            number of generation to loop over
+      -s N, --size N        size of the board
+      -c (N, N) [(N, N) ...], --cells (N, N) [(N, N) ...]
+                            set the initial alive cells
+      -t {cli,gui}, --type {cli,gui}
+                            type of display
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
