@@ -8,7 +8,7 @@ Dead simple ***Conway's** game of life*
 4. if a cell has more than 3 neighbours, the cell dies
 
 ## Usage
-usage: drawing.py [-h] [-g N] [-s N] [-c N, N) [(N, N ...]] [-t {cli,gui}]
+    usage: drawing.py [-h] [-g N] [-s N] [-c N, N) [(N, N ...]] [-t {cli,gui}]
 
     A Dead Simple Conway's game of life
     optional arguments:
